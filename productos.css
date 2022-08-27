@@ -1,0 +1,97 @@
+header {
+    background: rgba(70, 7, 7, 0.582);
+    padding: 20px 0; /* espaciamiento desde arriba y abajo + el margen de izquierda y derecha */
+}
+
+.caja{
+    width: 940px; /* se usa 940 px porque las pantallas comunmente tienen 1280px y utilizaremos el 70% de la pantalla */
+    position: relative;
+    margin: 0 auto; /*margen 0 del borde de nuestro marco y automatico desde el borde de la pantalla */
+}
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0px;
+    
+}
+
+nav li {
+    display: inline; /*deja las palabras alineadas en forma horizontal */
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase; /* texto queda todo en mayuscuyla*/
+    color: #000000;
+    font-weight: bold; /* texto en negrita */
+    font-size: 22px;
+    text-decoration: none; /*quita el subrayado por defecto de los link*/
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+.Productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.Productos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%; /*margen entre nuestras cajas de productos */
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000; /*forma reducida que poner los bordes que aparecen abajo*/
+    border-radius: 10px ;
+        /*border-color: #000000;
+    border-width: 2px;
+    border-style: solid;*/
+    /* ESTOS NOS PERMITEN MODIFICAR LOS BORDES UNO A UNO DE NUESTRAS CAJAS
+    border-radius: 2px;
+    border-top-left-radius: 10px;
+    border-botton-top-radius: 5px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 50px; */
+}
+
+.Productos li:hover{
+    border-color:#c78c19;
+    }
+
+.Productos li:active{
+    border-color: #088c19;
+}
+.Productos h2{
+    font-size: 30px;
+    font-style: bold;
+}
+.Productos li:hover h2{
+    font-size: 35px;
+}
+
+.producto-descripcion{
+    font-size: 18px;
+}
+
+.producto-precio{
+    font-size: 20px;
+    font-style: bold;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg); /* si bien la imagen es mas pequeña, backgound nos permite utilizar 100% nustra pagina*/
+    padding: 40px;
+}
+.Copyright{
+    color: #FFFFFF;
+    font-size: 10px;
+    margin:20px;
+}
